@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <center>
+        <h1>Update Page</h1>
+    </center>
+    <form action="updateuser" method="post">
+        <input type="hidden" value="{{data._id}}" name="id">
+        <div>
+            <label>UserName : </label>
+            <input type="text" placeholder="Enter UserName" name="name" value="{{data.name}}">
+            <label>Email : </label>
+            <input type="email" placeholder="Enter Email" name="email" value="{{data.email}}">
+            <label>Password : </label>
+            <input type="password" placeholder="Enter Password" name="password" value="{{data.password}}">
+            <button type="submit">Login</button>
+        </div> 
+    </form>
+</body>
+</html>
